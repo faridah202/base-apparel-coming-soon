@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1100px;
+    height: 100vh;
+}
+.card{
+    background: url(./images/bg-pattern-desktop.svg) no-repeat center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 600px;
+    height: 630px;
+}
+h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: 13px;
+    line-height: 1.2;
+    width: 400px;
+}
+span{
+    color: hsl(0, 36%, 70%);
+}
+p{
+    width: 400px;
+    color: hsl(0, 36%, 70%);
+    margin: 18px;
+    margin-bottom: 15px;
+}
+input[type=text]{
+    width: 350px;
+    padding: 20px;
+    border-radius: 35px;
+    border: 2px solid hsl(0, 36%, 70%);
+    background-color: transparent;
+}
+input[type=submit]{
+    position: relative;
+    right: 100px;
+    bottom: -23px;
+    width: 100px;
+    border: none;
+    border-radius: 35px;
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+    background: url(./images/icon-arrow.svg) no-repeat center;
+    background-color: hsl(0, 36%, 70%);
+}
+input[type=email].active{
+    border: 2px solid hsl(0, 36%, 70%);
+}
+#message{
+    color: red;
+    margin: 10px;
+    position: relative;
+     right: -60px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 12px;
+}
+#er{
+    width: 20px;
+    position: relative;
+    left: 250px;
+    top: 10px;
+    display: none;
+}
+#er.active{
+     display: block;
+}
